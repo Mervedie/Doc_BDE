@@ -8,7 +8,13 @@
     --card-bg: #ffffff;
     --font-heading: 'Lexend', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --container-width: 900px;
+    --container-width: 210mm;
+    --container-height: 297mm;
+}
+
+@page {
+    size: A4;
+    margin: 0;
 }
 
 * {
@@ -26,11 +32,12 @@ body {
 }
 
 .contract-container {
-    max-width: var(--container-width);
-    margin: 0 auto;
+    width: var(--container-width);
+    min-height: var(--container-height);
+    margin: 50px auto;
     background: var(--card-bg);
-    padding: 5rem 6rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 25mm 20mm;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     position: relative;
     border: 1px solid var(--border-light);
 }
@@ -103,6 +110,8 @@ h1 {
 
 section {
     margin-bottom: 3rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 h2 {
@@ -188,6 +197,7 @@ li strong {
     padding: 2.5rem;
     position: relative;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+    break-inside: avoid;
 }
 
 .sanctions-box p {
@@ -265,12 +275,9 @@ li strong {
     .contract-container {
         box-shadow: none;
         border: none;
-        padding: 2rem;
+        padding: 25mm 20mm;
         width: 100%;
-    }
-
-    .bg-color {
-        background-color: white;
+        margin: 0;
     }
 }
 
