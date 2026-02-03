@@ -272,6 +272,15 @@ li strong {
         padding: 0;
     }
 
+    /* Add space for headers on subsequent pages */
+    section {
+        padding-top: 15mm;
+    }
+
+    section:first-of-type {
+        padding-top: 0;
+    }
+
     .contract-container {
         box-shadow: none;
         border: none;
