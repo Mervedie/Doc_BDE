@@ -230,9 +230,9 @@ li strong {
 }
 
 .signature-block {
-    height: 180px;
+    height: 90px;
     border: 1px solid #eee;
-    padding: 1.5rem;
+    padding: 1rem;
     position: relative;
     background: #fbfbfb;
 }
