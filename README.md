@@ -1,36 +1,29 @@
-# BDE EPITECH Bénin - Contrat d'Engagement et de Confidentialité
+# OLYMPUS - Liste BDE 2026-2027
 
-Ce dépôt contient le site web officiel du contrat d'engagement et de confidentialité pour le **Bureau des Étudiants (BDE) d'EPITECH Bénin** pour l'année académique **2026-2027**.
+Ce dépôt contient le site web officiel de la campagne pour la **Liste OLYMPUS**, candidate au Bureau des Étudiants (BDE) d'EPITECH Bénin pour l'année académique **2026-2027**.
 
-## 🚀 Aperçu
+## 🔱 Notre Vision
+*"Plus haut, plus fort, ensemble."*
 
-Le document est un site web statique (HTML/CSS) conçu pour être à la fois premium, professionnel et conforme à la charte graphique d'EPITECH. Il est optimisé pour :
-- La lecture sur tous supports (Responsive Design).
-- L'impression professionnelle (Print-friendly).
-- La signature manuscrite.
+Le site présente l'équipe, les différents pôles et les ambitions de la liste OLYMPUS à travers un design premium et moderne.
 
-## 🛠️ Technologies utilisées
+## 🚀 Fonctionnalités
+- **Design de Luxe** : Thème sombre (Noir & Or) inspiré de l'Olympe.
+- **Organisation Complète** : Présentation détaillée des 9 pôles et du bureau exécutif.
+- **Optimisation Print/A4** : Conçu pour être imprimé avec une mise en page impeccable.
+- **Identité Forte** : Intégration du logo OLYMPUS en haute définition et filigrane de fond.
 
-- **HTML5** : Structure sémantique du contrat.
-- **CSS3** : Design system moderne, typographie Lexend & Inter, micro-animations.
-- **Google Fonts** : Lexend (Titres) et Inter (Corps du texte).
+## 🛠️ Technologies
+- **HTML5 & CSS3** : Structure et mise en forme modernes.
+- **Google Fonts** : *Cinzel* (Titres) et *EB Garamond* (Corps) pour une esthétique classique et luxueuse.
+- **ImageMagick** : Utilisé pour la conversion et l'optimisation des assets graphiques.
 
-## 📄 Structure du Contrat
-
-1. **Identification du membre** : Formulaire de saisie des informations personnelles.
-2. **Engagements** : Valeurs de confiance et de responsabilité.
-3. **Confidentialité** : Protection stricte des données sensibles.
-4. **Risques et Sanctions** : Conformité avec le Code du Numérique et le Code Pénal du Bénin.
-5. **Étudiant Mineur** : Clauses de responsabilité parentale.
-6. **Signatures** : Espaces formels pour l'approbation.
-
-## 🔧 Installation locale
-
+## 📦 Installation
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/Doc_BDE.git
+   git clone https://github.com/Mervedie/Doc_BDE.git
    ```
-2. Ouvrez `index.html` dans n'veimporte quel navigateur moderne.
+2. Ouvrez `index.html` dans votre navigateur.
 
 ---
-*Document officiel BDE EPITECH Bénin - Session 2026-2027*
+*Propulsé par 🔱 OLYMPUS — Liste Candidate BDE 2026-2027*
