@@ -19,8 +19,7 @@
     --border-gold: #3a3020;
     --font-head: 'Cinzel', serif;
     --font-body: 'EB Garamond', serif;
-    --a4-w: 210mm;
-    --a4-h: 297mm;
+    --max-w: 900px;
 }
 
 @page {
@@ -44,17 +43,19 @@ body {
 
 /* ─── PAGE CONTAINER ─── */
 .contract-container {
-    width: var(--a4-w);
-    min-height: var(--a4-h);
-    margin: 50px auto;
+    width: 95%;
+    max-width: var(--max-w);
+    min-height: 100vh;
+    margin: 20px auto;
     background: var(--card-bg);
-    padding: 22mm 20mm;
+    padding: clamp(1rem, 5vw, 4rem);
     box-shadow:
         0 0 0 1px var(--border-gold),
         0 20px 60px rgba(0, 0, 0, 0.8),
         inset 0 0 80px rgba(201, 168, 76, 0.03);
     position: relative;
     border-top: 3px solid var(--gold);
+    overflow: hidden;
 }
 
 /* Gold corner ornaments */
@@ -173,7 +174,7 @@ header {
 /* ─── TITLE ─── */
 h1 {
     font-family: var(--font-head);
-    font-size: 2.1rem;
+    font-size: clamp(1.8rem, 6vw, 2.1rem);
     font-weight: 900;
     color: var(--gold-light);
     letter-spacing: 3px;
@@ -459,8 +460,8 @@ footer {
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    letter-spacing: 6px;
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    letter-spacing: clamp(2px, 2vw, 6px);
     margin-bottom: 0.5rem;
 }
 
@@ -499,6 +500,16 @@ footer {
 
 .bureau-table tr {
     border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+
+@media (min-width: 600px) {
+    .bureau-table tr {
+        display: table-row;
+        padding: 0;
+    }
 }
 
 .bureau-table tr:last-child {
@@ -506,7 +517,7 @@ footer {
 }
 
 .bureau-table td {
-    padding: 0.6rem 0.5rem;
+    padding: 0.4rem 0.5rem;
     font-size: 0.95rem;
     color: var(--text-main);
     vertical-align: middle;
@@ -519,7 +530,13 @@ footer {
     color: var(--gold);
     text-transform: uppercase;
     white-space: nowrap;
-    width: 40%;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .bureau-table .role {
+        width: 40%;
+    }
 }
 
 .bureau-table .name {
@@ -530,7 +547,7 @@ footer {
 /* Poles grid */
 .poles-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -540,6 +557,16 @@ footer {
     border: 1px solid var(--border-gold);
     padding: 1.25rem 1.5rem;
     break-inside: avoid;
+}
+
+.pole-card.span-2 {
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+    .pole-card.span-2 {
+        grid-column: span 2;
+    }
 }
 
 .pole-card .pole-title {
@@ -605,11 +632,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .poles-grid {
-        grid-template-columns: 1fr;
-    }
-
     .hero h1 {
-        font-size: 2rem;
+        font-size: clamp(2rem, 8vw, 2.8rem);
     }
 }
