@@ -125,13 +125,13 @@ footer,
     z-index: 10;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .contract-container .conf-badge {
         position: relative;
         top: 0;
         right: 0;
         display: inline-block;
-        margin-bottom: 2rem;
+        margin: 0 auto 1.5rem;
     }
 }
 
@@ -147,7 +147,7 @@ header {
     margin-bottom: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -558,6 +558,12 @@ footer {
 @media (min-width: 600px) {
     .bureau-table .role {
         width: 40%;
+    }
+}
+
+@media (max-width: 800px) {
+    .bureau-table .role {
+        width: 100%;
     }
 }
 
